@@ -27,6 +27,51 @@ describe('AppComponent', () => {
         const compiled = fixture.debugElement.nativeElement;
         expect(compiled.querySelector('h1').textContent).toContain('Welcome to circle-of-fifths!');
     }));
+    it('should render Db button representing key of Db', async(() => {
+        const fixture = TestBed.createComponent(AppComponent);
+        fixture.detectChanges();
+        const debugElement: DebugElement = fixture.debugElement;
+
+        const cButtonDebugElement = debugElement.query(By.css('#Db'));
+        const c: HTMLButtonElement = cButtonDebugElement.nativeElement;
+        expect(c).toBeTruthy();
+    }));
+    it('should render Ab button representing key of Ab', async(() => {
+        const fixture = TestBed.createComponent(AppComponent);
+        fixture.detectChanges();
+        const debugElement: DebugElement = fixture.debugElement;
+
+        const cButtonDebugElement = debugElement.query(By.css('#Ab'));
+        const c: HTMLButtonElement = cButtonDebugElement.nativeElement;
+        expect(c).toBeTruthy();
+    }));
+    it('should render Eb button representing key of Eb', async(() => {
+        const fixture = TestBed.createComponent(AppComponent);
+        fixture.detectChanges();
+        const debugElement: DebugElement = fixture.debugElement;
+
+        const cButtonDebugElement = debugElement.query(By.css('#Eb'));
+        const c: HTMLButtonElement = cButtonDebugElement.nativeElement;
+        expect(c).toBeTruthy();
+    }));
+    it('should render Bb button representing key of Bb', async(() => {
+        const fixture = TestBed.createComponent(AppComponent);
+        fixture.detectChanges();
+        const debugElement: DebugElement = fixture.debugElement;
+
+        const cButtonDebugElement = debugElement.query(By.css('#Bb'));
+        const c: HTMLButtonElement = cButtonDebugElement.nativeElement;
+        expect(c).toBeTruthy();
+    }));
+    it('should render F button representing key of F', async(() => {
+        const fixture = TestBed.createComponent(AppComponent);
+        fixture.detectChanges();
+        const debugElement: DebugElement = fixture.debugElement;
+
+        const cButtonDebugElement = debugElement.query(By.css('#F'));
+        const c: HTMLButtonElement = cButtonDebugElement.nativeElement;
+        expect(c).toBeTruthy();
+    }));
     it('should render C button representing key of C', async(() => {
         const fixture = TestBed.createComponent(AppComponent);
         fixture.detectChanges();
