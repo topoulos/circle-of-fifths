@@ -15,7 +15,7 @@ export class Key {
         Note.F,
         Note.FS,
         Note.G,
-        Note.G
+        Note.GS
     ];
 
     private readonly notesWithFlats: string[] = [
@@ -30,10 +30,10 @@ export class Key {
         Note.F,
         Note.Gb,
         Note.G,
-        Note.A
+        Note.Ab
     ];
 
-    public clamp(index: number): number {
+    private clamp(index: number): number {
         if (index > 11) {
             return (11 - index + 1) * -1;
         }

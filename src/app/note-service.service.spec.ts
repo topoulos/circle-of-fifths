@@ -75,9 +75,4 @@ describe('NoteServiceService', () => {
     expect(service.getMinorRelatedKey(Note.FS)).toBe(Note.DS);
   }));
 
-  it('test clamp', inject([NoteServiceService], (service: NoteServiceService) => {
-    expect(service.getClampedIndex(0)).toBe( 0 );
-    expect(service.getClampedIndex(-1)).toBe( 11 );
-    expect(service.getClampedIndex(12)).toBe( 0 );
-  }));
 });
